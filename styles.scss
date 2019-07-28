@@ -1,0 +1,155 @@
+
+                                            /******    Main nodes       ******/
+body {
+    background-color: black;
+}
+
+/*
+* {
+    box-sizing: border-box;
+}
+*/
+*::before, *::after {
+    box-sizing: inherit;
+}
+                                            /******     Variables      ******/
+
+$container-background: url(pics/wallpaper.jpg);
+
+                                            /******     Container Start      ******/
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: $container-background;
+    grid-template-rows: "assassin" "blademaster" "brawler" "elementalist" "guardian" "gunslinger" "knight" "ranger" "shapeshifter" "sorcerer";
+    grid-row-gap: 1em;
+    width: 100vw;
+    background-repeat: no-repeat;
+    position: relative;
+                                            /******    Hero Start      ******/
+
+    .heroes {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background: url(pics/wallpaper.jpg);
+        padding: 1% 0 1% 0;
+
+                                            /******    Assassins Start      ******/
+
+        .assassins {
+                                                        /******    Assassin ICON Start      ******/
+
+                    img{
+                        width:60px;
+                        height:60px;
+                        border: 0.1rem solid rgba(189, 199, 202, 0.856);
+                        border-radius: 40%;
+                            }
+                }
+                                            /******     Heroes -H1- Start      ******/
+
+        h1 {
+            justify-content: flex-end;
+            font-family: 'Yantramanav', sans-serif;
+            color: white;
+            margin-right: 1%;
+            font-size: 1rem;
+        }
+
+                                            /******    Heroes Start      ******/
+
+        .class-icon {
+            background-color: rgb(206, 204, 204);
+            width: auto;
+            height: auto;
+            border: groove 1px rgba(150, 141, 141, 0.5);
+            box-shadow: -2px 3px 8px 10px rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: flex-start;
+            margin-left: 2%;
+   
+            &:hover {
+            animation: 'iconlightup';
+            animation-fill-mode: forwards;
+            animation-duration: 1.05s; 
+            }
+
+                @keyframes iconlightup {
+                    from {
+                        border: 0.1rem solid rgba(189, 199, 202, 0.856);
+                        background-color: rgb(206, 204, 204);
+                    }
+                    to {
+                        border: 0.3rem groove rgba(202, 199, 11, 1);
+                        background-color: rgb(255, 255, 255);
+                        border-radius: 20%;
+                        transform: scale(0.88);
+
+                            }
+                        }
+
+
+        }
+
+    }
+
+
+
+
+}
+                                            /******    Dad Div Start      ******/
+
+.dad {
+    widows: 100vw;;
+    height: auto;
+}
+                                            /******    Stat Sheets       ******/
+                                         /******   Assassin Stat Sheets       ******/
+
+.assassin-stats  {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 5%;
+    top: 11%;
+    border: 0.1rem solid rgba(189, 199, 202, 0.856);
+    border-radius: 50px;   
+    border-top-left-radius: 1px;
+    background-color: rgba(236, 226, 226, 1);
+    z-index: 2;
+    padding: 2% 1%;
+    opacity : 0;
+    animation: 'softly';
+    animation-fill-mode: forwards;
+    animation-duration: 1.05s;
+                                            /******    Animation for Icons and stats       ******/
+
+  @keyframes softly {
+        from {
+            background-color: rgba(236, 226, 226, 1);
+            color: rgba(0, 0, 0, 0.7);
+            transform: scale(0.9);
+        }
+
+        55% {
+            background-color: rgba(236, 226, 226, 1);
+            color: rgba(0, 0, 0, 0.7);
+            transform: scale(1.05);
+            border: 0.1rem solid rgba(39, 38, 8, 0.856);
+        }
+        to {
+            background-color: rgba(0, 0, 0, 0.85);
+            color: rgb(206, 204, 204);
+            transform: scale(1);
+            border: 0.2rem groove rgba(202, 199, 11, 1);
+
+        }
+  }
+
+
+}
+
+
+  

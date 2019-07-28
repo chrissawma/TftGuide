@@ -1,0 +1,197 @@
+/******    Main nodes       ******/
+body {
+  background-color: black;
+}
+
+/*
+* {
+    box-sizing: border-box;
+}
+*/
+*::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/******     Variables      ******/
+/******     Container Start      ******/
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  background-color: url(pics/wallpaper.jpg);
+  -ms-grid-rows: "assassin" "blademaster" "brawler" "elementalist" "guardian" "gunslinger" "knight" "ranger" "shapeshifter" "sorcerer";
+      grid-template-rows: "assassin" "blademaster" "brawler" "elementalist" "guardian" "gunslinger" "knight" "ranger" "shapeshifter" "sorcerer";
+  grid-row-gap: 1em;
+  width: 100vw;
+  background-repeat: no-repeat;
+  position: relative;
+  /******    Hero Start      ******/
+}
+
+.container .heroes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  background: url(pics/wallpaper.jpg);
+  padding: 1% 0 1% 0;
+  /******    Assassins Start      ******/
+  /******     Heroes -H1- Start      ******/
+  /******    Heroes Start      ******/
+}
+
+.container .heroes .assassins {
+  /******    Assassin ICON Start      ******/
+}
+
+.container .heroes .assassins img {
+  width: 60px;
+  height: 60px;
+  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border-radius: 40%;
+}
+
+.container .heroes h1 {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-family: 'Yantramanav', sans-serif;
+  color: white;
+  margin-right: 1%;
+  font-size: 1rem;
+}
+
+.container .heroes .class-icon {
+  background-color: #cecccc;
+  width: auto;
+  height: auto;
+  border: groove 1px rgba(150, 141, 141, 0.5);
+  -webkit-box-shadow: -2px 3px 8px 10px rgba(0, 0, 0, 0.7);
+          box-shadow: -2px 3px 8px 10px rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: 2%;
+}
+
+.container .heroes .class-icon:hover {
+  -webkit-animation: 'iconlightup';
+          animation: 'iconlightup';
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.05s;
+          animation-duration: 1.05s;
+}
+
+@-webkit-keyframes iconlightup {
+  from {
+    border: 0.1rem solid rgba(189, 199, 202, 0.856);
+    background-color: #cecccc;
+  }
+  to {
+    border: 0.3rem groove #cac70b;
+    background-color: white;
+    border-radius: 20%;
+    -webkit-transform: scale(0.88);
+            transform: scale(0.88);
+  }
+}
+
+@keyframes iconlightup {
+  from {
+    border: 0.1rem solid rgba(189, 199, 202, 0.856);
+    background-color: #cecccc;
+  }
+  to {
+    border: 0.3rem groove #cac70b;
+    background-color: white;
+    border-radius: 20%;
+    -webkit-transform: scale(0.88);
+            transform: scale(0.88);
+  }
+}
+
+/******    Dad Div Start      ******/
+.dad {
+  widows: 100vw;
+  height: auto;
+}
+
+/******    Stat Sheets       ******/
+/******   Assassin Stat Sheets       ******/
+.assassin-stats {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 5%;
+  top: 11%;
+  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border-radius: 50px;
+  border-top-left-radius: 1px;
+  background-color: #ece2e2;
+  z-index: 2;
+  padding: 2% 1%;
+  opacity: 0;
+  -webkit-animation: 'softly';
+          animation: 'softly';
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.05s;
+          animation-duration: 1.05s;
+  /******    Animation for Icons and stats       ******/
+}
+
+@-webkit-keyframes softly {
+  from {
+    background-color: #ece2e2;
+    color: rgba(0, 0, 0, 0.7);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  55% {
+    background-color: #ece2e2;
+    color: rgba(0, 0, 0, 0.7);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    border: 0.1rem solid rgba(39, 38, 8, 0.856);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #cecccc;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    border: 0.2rem groove #cac70b;
+  }
+}
+
+@keyframes softly {
+  from {
+    background-color: #ece2e2;
+    color: rgba(0, 0, 0, 0.7);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  55% {
+    background-color: #ece2e2;
+    color: rgba(0, 0, 0, 0.7);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    border: 0.1rem solid rgba(39, 38, 8, 0.856);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #cecccc;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    border: 0.2rem groove #cac70b;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
