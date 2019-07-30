@@ -41,6 +41,15 @@ body {
   background: url(pics/wallpaper.jpg);
   padding: 1% 0 1% 0;
   /******    Assassins Start      ******/
+  /******    Blademasters Start      ******/
+  /******    Brawlers Start      ******/
+  /******    Elementalists Start      ******/
+  /******    Elementalists Start      ******/
+  /******    Gunslingers Start      ******/
+  /******    Knights Start      ******/
+  /******    Rangers Start      ******/
+  /******    Shapershifters Start      ******/
+  /******    Sorcerers Start      ******/
   /******     Heroes -H1- Start      ******/
   /******    Heroes Start      ******/
 }
@@ -50,6 +59,105 @@ body {
 }
 
 .container .heroes .assassins img {
+  width: 60px;
+  height: 60px;
+  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border-radius: 40%;
+}
+
+.container .heroes .blademasters {
+  /******    Bladmasters ICON Start      ******/
+}
+
+.container .heroes .blademasters img {
+  width: 60px;
+  height: 60px;
+  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border-radius: 40%;
+}
+
+.container .heroes .brawlers {
+  /******    Brawlers ICON Start      ******/
+}
+
+.container .heroes .brawlers img {
+  width: 60px;
+  height: 60px;
+  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border-radius: 40%;
+}
+
+.container .heroes .elementalists {
+  /******    Elementalists ICON Start      ******/
+}
+
+.container .heroes .elementalists img {
+  width: 60px;
+  height: 60px;
+  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border-radius: 40%;
+}
+
+.container .heroes .guardians {
+  /******    Guardians ICON Start      ******/
+}
+
+.container .heroes .guardians img {
+  width: 60px;
+  height: 60px;
+  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border-radius: 40%;
+}
+
+.container .heroes .gunslingers {
+  /******    Gunslingers ICON Start      ******/
+}
+
+.container .heroes .gunslingers img {
+  width: 60px;
+  height: 60px;
+  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border-radius: 40%;
+}
+
+.container .heroes .knights {
+  /******    Knights ICON Start      ******/
+}
+
+.container .heroes .knights img {
+  width: 60px;
+  height: 60px;
+  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border-radius: 40%;
+}
+
+.container .heroes .rangers {
+  /******    Elementalists ICON Start      ******/
+}
+
+.container .heroes .rangers img {
+  width: 60px;
+  height: 60px;
+  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border-radius: 40%;
+}
+
+.container .heroes .shapeshifters {
+  /******    Shapershifters ICON Start      ******/
+}
+
+.container .heroes .shapeshifters img {
+  width: 60px;
+  height: 60px;
+  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border-radius: 40%;
+}
+
+.container .heroes .sorcerers {
+  /******    Sorcerers ICON Start      ******/
+}
+
+.container .heroes .sorcerers img {
   width: 60px;
   height: 60px;
   border: 0.1rem solid rgba(189, 199, 202, 0.856);
@@ -89,6 +197,12 @@ body {
           animation-fill-mode: forwards;
   -webkit-animation-duration: 1.05s;
           animation-duration: 1.05s;
+}
+
+.container .heroes .class-icon:hover div > img {
+  border-color: #cac70b;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @-webkit-keyframes iconlightup {

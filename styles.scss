@@ -38,16 +38,116 @@ $container-background: url(pics/wallpaper.jpg);
 
                                             /******    Assassins Start      ******/
 
-        .assassins {
+                                            .assassins {
                                                         /******    Assassin ICON Start      ******/
-
-                    img{
-                        width:60px;
-                        height:60px;
-                        border: 0.1rem solid rgba(189, 199, 202, 0.856);
-                        border-radius: 40%;
+                            img{
+                                width:60px;
+                                height:60px;
+                                border: 0.1rem solid rgba(189, 199, 202, 0.856);
+                                border-radius: 40%;
+                                }
                             }
-                }
+                
+                                            /******    Blademasters Start      ******/
+
+                                            .blademasters {
+                                                /******    Bladmasters ICON Start      ******/
+                            img{
+                                width:60px;
+                                height:60px;
+                                border: 0.1rem solid rgba(189, 199, 202, 0.856);
+                                border-radius: 40%;
+                                }
+                            }
+                                                                        /******    Brawlers Start      ******/
+
+                                            .brawlers {
+                                                /******    Brawlers ICON Start      ******/
+                            img{
+                                width:60px;
+                                height:60px;
+                                border: 0.1rem solid rgba(189, 199, 202, 0.856);
+                                border-radius: 40%;
+                                }
+                            }
+                                                           /******    Elementalists Start      ******/
+
+                                            .elementalists {
+                                                 /******    Elementalists ICON Start      ******/
+                            img{
+                                width:60px;
+                                height:60px;
+                                border: 0.1rem solid rgba(189, 199, 202, 0.856);
+                                border-radius: 40%;
+                                }
+                            }
+                                                                                      /******    Elementalists Start      ******/
+
+                                            .guardians {
+                                                 /******    Guardians ICON Start      ******/
+                            img{
+                                width:60px;
+                                height:60px;
+                                border: 0.1rem solid rgba(189, 199, 202, 0.856);
+                                border-radius: 40%;
+                                }
+                            }
+                                                          /******    Gunslingers Start      ******/
+
+                                            .gunslingers {
+                                                /******    Gunslingers ICON Start      ******/
+                        img{
+                                width:60px;
+                                height:60px;
+                                border: 0.1rem solid rgba(189, 199, 202, 0.856);
+                                border-radius: 40%;
+                                }
+                            }
+                                                        /******    Knights Start      ******/
+
+                                            .knights {
+                                            /******    Knights ICON Start      ******/
+                        img{
+                                width:60px;
+                                height:60px;
+                                border: 0.1rem solid rgba(189, 199, 202, 0.856);
+                                border-radius: 40%;
+                                }
+                            }
+                                                /******    Rangers Start      ******/
+
+                                                .rangers {
+                                                    /******    Elementalists ICON Start      ******/
+                        img{
+                                width:60px;
+                                height:60px;
+                                border: 0.1rem solid rgba(189, 199, 202, 0.856);
+                                border-radius: 40%;
+                                }
+                            }         
+                            
+                                                          /******    Shapershifters Start      ******/
+
+                                                .shapeshifters {
+                                                    /******    Shapershifters ICON Start      ******/
+                        img{
+                                width:60px;
+                                height:60px;
+                                border: 0.1rem solid rgba(189, 199, 202, 0.856);
+                                border-radius: 40%;
+                                }
+                            }
+                                                /******    Sorcerers Start      ******/
+
+                                                .sorcerers {
+                                                    /******    Sorcerers ICON Start      ******/
+                        img{
+                                width:60px;
+                                height:60px;
+                                border: 0.1rem solid rgba(189, 199, 202, 0.856);
+                                border-radius: 40%;
+                                }
+                            }                        
                                             /******     Heroes -H1- Start      ******/
 
         h1 {
@@ -74,6 +174,11 @@ $container-background: url(pics/wallpaper.jpg);
             animation: 'iconlightup';
             animation-fill-mode: forwards;
             animation-duration: 1.05s; 
+                div > img {
+                    border-color: rgba(202, 199, 11, 1);
+                    transform: scale(1.2);
+                }
+                
             }
 
                 @keyframes iconlightup {
