@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,7 +13,7 @@
 
     <div class="container" >
         <div class="heroes" id="assasin">
-                    <div class="class-icon" onclick="shownidalee()"><img src="pics/assassin_icon.png"></div>
+                    <div class="class-icon"  onclick="originStat('assassin', originList, 'bonuses', 1, 'assassinstats', 0)"><img src="pics/assassin_icon.png"></div>
                                 <div class="assassins">
                                     <img src="pics/assassins/Nidalee-Icon.png">
                                     <img src="pics/assassins/Akali-Icon.png">
@@ -31,7 +30,7 @@
                                         <h1>Assasin</h1></div>                                 
         
                            <div class="heroes" id="blademaster">
-                                <div class="class-icon"><img src="pics/Blademaster_icon.png"></div>
+                                <div class="class-icon" onclick="originStat('blademaster', originList, 'bonuses', null, 'blademasterstats', 1)"><img src="pics/Blademaster_icon.png"></div>
                                        <div class="blademasters">
                                            <img src="pics/Blademasters/Aatrox-Icon.png">
                                            <img src="pics/Blademasters/Draven-Icon.png">
@@ -43,7 +42,7 @@
                                 <h1>Blademaster</h1></div>
         
                              <div class="heroes" id="brawler">
-                                <div class="class-icon"><img src="pics/brawler_icon.png"></div>
+                                <div class="class-icon" onclick="originStat('brawler', originList, 'bonuses', 1, 'brawlerstats', 2)"><img src="pics/brawler_icon.png"></div>
                                 <div class="brawlers">
                                     <img src="pics/Brawlers/Blitzcrank-Icon.png">
                                     <img src="pics/Brawlers/Cho'Gath-Icon.png">        
@@ -54,7 +53,7 @@
                                 <h1>Brawler</h1></div>
     
                               <div class="heroes" id="elementalist">
-                                <div class="class-icon"><img src="pics/elementalist_icon.png"></div>
+                                <div class="class-icon" onclick="originStat('elementalist', originList, 'bonuses',null, 'elementaliststats', 3)"><img src="pics/elementalist_icon.png"></div>
                                    <div class="elementalists">
                                     <img src="pics/Elemtalists/Anivia-Icon.png">        
                                     <img src="pics/Elemtalists/Brand-Icon.png">        
@@ -64,7 +63,7 @@
                                 <h1>Elementalist</h1></div>
  
                              <div class="heroes" id="guardian">
-                                <div class="class-icon">  <img src="pics/guardian_icon.png"></div>                               
+                                <div class="class-icon" onclick="originStat('guardian', originList, 'description', null, 'guardianstats', 4)">  <img src="pics/guardian_icon.png"></div>                               
                                   <div class="guardians">
                                     <img src="pics/Guardians/Braum-Icon.png">
                                     <img src="pics/Guardians/Leona-Icon.png">
@@ -72,7 +71,7 @@
                                 <h1>Guardian</h1></div>
         
                             <div class="heroes" id="gunslinger">
-                                <div class="class-icon"><img src="pics/gunslinger_icon.png"></div>
+                                <div class="class-icon" onclick="originStat('gunslinger', originList, 'description', null, 'gunslingerstats', 5)"> <img src="pics/gunslinger_icon.png"></div>
                                   <div class="gunslingers">
                                      <img src="pics/Gunslingers/Gangplank-Icon.png">
                                      <img src="pics/Gunslingers/Graves-Icon (1).png">
@@ -84,7 +83,7 @@
         
                                 
                             <div class="heroes" id="knight">
-                                <div class="class-icon"><img src="pics/knight_icon.png"></div>
+                                <div class="class-icon" onclick="originStat('knight', originList, 'description', null, 'knightstats', 6)"><img src="pics/knight_icon.png"></div>
                                   <div class="knights">
                                     <img src="pics/Knights/Darius-Icon.png">        
                                     <img src="pics/Knights/Garen-Icon.png">        
@@ -97,7 +96,7 @@
         
                                 
                                 <div class="heroes" id="ranger">
-                                <div class="class-icon"><img src="pics/ranger_icon.png"></div>
+                                <div class="class-icon"  onclick="originStat('ranger', originList, 'description', null, 'rangerstats', 7)"><img src="pics/ranger_icon.png"></div>
                                   <div class="rangers">
                                     <img src="pics/Rangers/Ashe-Icon.png">        
                                     <img src="pics/Rangers/Fiora-Icon.png">        
@@ -109,7 +108,7 @@
                                 
                                       
                             <div class="heroes" id="shapeshifter">
-                                <div class="class-icon"><img src="pics/shapeshifter_icon.png"></div>
+                                <div class="class-icon"  onclick="originStat('shapeshifter', originList, 'description', null, 'shapeshifterstats', 8)"><img src="pics/shapeshifter_icon.png"></div>
                                   <div class="shapeshifters"> 
                                     <img src="pics/Shapeshifters/Elise-Icon.png">    
                                     <img src="pics/Shapeshifters/Gnar-Icon.png">        
@@ -121,7 +120,7 @@
         
                                 
                                 <div class="heroes" id="sorcerer">
-                                <div class="class-icon"><img src="pics/sorcerer_icon.png"></div>
+                                <div class="class-icon"  onclick="originStat('sorcerer', originList, 'description', null, 'sorcererstats', 9)"><img src="pics/sorcerer_icon.png"></div>
                                   <div class="sorcerers">
                                    <img src="pics/Sorcerers/Ahri-Icon.png">      
                                    <img src="pics/Sorcerers/Aurelion Sol-Icon.png">      

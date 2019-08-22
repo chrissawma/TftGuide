@@ -31,9 +31,9 @@ body {
 }
 
 .container .heroes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -59,10 +59,16 @@ body {
 }
 
 .container .heroes .assassins img {
-  width: 60px;
-  height: 60px;
-  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  width: 3rem;
+  height: 3rem;
   border-radius: 40%;
+  /** I FUCKED AROUND WITH THIS 7/30/19  **/
+  position: relative;
+  margin: auto;
+  border: 0.1rem solid;
+  -o-border-image: linear-gradient(to right, rgba(177, 31, 31, 0.753), rgba(212, 181, 2, 0.815));
+     border-image: -webkit-gradient(linear, left top, right top, from(rgba(177, 31, 31, 0.753)), to(rgba(212, 181, 2, 0.815)));
+     border-image: linear-gradient(to right, rgba(177, 31, 31, 0.753), rgba(212, 181, 2, 0.815));
 }
 
 .container .heroes .blademasters {
@@ -70,9 +76,9 @@ body {
 }
 
 .container .heroes .blademasters img {
-  width: 60px;
-  height: 60px;
-  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  width: 3rem;
+  height: 3rem;
+  border: 0.1rem solid transparent;
   border-radius: 40%;
 }
 
@@ -83,7 +89,7 @@ body {
 .container .heroes .brawlers img {
   width: 60px;
   height: 60px;
-  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border: 0.1rem solid transparent;
   border-radius: 40%;
 }
 
@@ -94,7 +100,7 @@ body {
 .container .heroes .elementalists img {
   width: 60px;
   height: 60px;
-  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border: 0.1rem solid transparent;
   border-radius: 40%;
 }
 
@@ -105,7 +111,7 @@ body {
 .container .heroes .guardians img {
   width: 60px;
   height: 60px;
-  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border: 0.1rem solid transparent;
   border-radius: 40%;
 }
 
@@ -116,7 +122,7 @@ body {
 .container .heroes .gunslingers img {
   width: 60px;
   height: 60px;
-  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border: 0.1rem solid transparent;
   border-radius: 40%;
 }
 
@@ -127,7 +133,7 @@ body {
 .container .heroes .knights img {
   width: 60px;
   height: 60px;
-  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border: 0.1rem solid transparent;
   border-radius: 40%;
 }
 
@@ -138,7 +144,7 @@ body {
 .container .heroes .rangers img {
   width: 60px;
   height: 60px;
-  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border: 0.1rem solid transparent;
   border-radius: 40%;
 }
 
@@ -149,7 +155,7 @@ body {
 .container .heroes .shapeshifters img {
   width: 60px;
   height: 60px;
-  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border: 0.1rem solid transparent;
   border-radius: 40%;
 }
 
@@ -160,7 +166,7 @@ body {
 .container .heroes .sorcerers img {
   width: 60px;
   height: 60px;
-  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border: 0.1rem solid transparent;
   border-radius: 40%;
 }
 
@@ -241,12 +247,12 @@ body {
 
 /******    Stat Sheets       ******/
 /******   Assassin Stat Sheets       ******/
-.assassin-stats {
+.assassinstats {
   position: absolute;
   width: auto;
   height: auto;
   left: 5%;
-  top: 11%;
+  top: 7%;
   border: 0.1rem solid rgba(189, 199, 202, 0.856);
   border-radius: 50px;
   border-top-left-radius: 1px;
@@ -307,5 +313,194 @@ body {
             transform: scale(1);
     border: 0.2rem groove #cac70b;
   }
+}
+
+.blademasterstats {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 5%;
+  top: 16%;
+  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border-radius: 50px;
+  border-top-left-radius: 1px;
+  background-color: #ece2e2;
+  z-index: 5;
+  padding: 2% 1%;
+  opacity: 0;
+  -webkit-animation: 'softly';
+          animation: 'softly';
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.05s;
+          animation-duration: 1.05s;
+}
+
+.brawlerstats {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 5%;
+  top: 26.5%;
+  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border-radius: 50px;
+  border-top-left-radius: 1px;
+  background-color: #ece2e2;
+  z-index: 2;
+  padding: 2% 1%;
+  opacity: 0;
+  -webkit-animation: 'softly';
+          animation: 'softly';
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.05s;
+          animation-duration: 1.05s;
+}
+
+.elementaliststats {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 5%;
+  top: 37%;
+  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border-radius: 50px;
+  border-top-left-radius: 1px;
+  background-color: #ece2e2;
+  z-index: 2;
+  padding: 2% 1%;
+  opacity: 0;
+  -webkit-animation: 'softly';
+          animation: 'softly';
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.05s;
+          animation-duration: 1.05s;
+}
+
+.guardianstats {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 5%;
+  top: 47%;
+  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border-radius: 50px;
+  border-top-left-radius: 1px;
+  background-color: #ece2e2;
+  z-index: 2;
+  padding: 2% 1%;
+  opacity: 0;
+  -webkit-animation: 'softly';
+          animation: 'softly';
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.05s;
+          animation-duration: 1.05s;
+}
+
+.gunslingerstats {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 5%;
+  top: 57.5%;
+  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border-radius: 50px;
+  border-top-left-radius: 1px;
+  background-color: #ece2e2;
+  z-index: 2;
+  padding: 2% 1%;
+  opacity: 0;
+  -webkit-animation: 'softly';
+          animation: 'softly';
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.05s;
+          animation-duration: 1.05s;
+}
+
+.knightstats {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 5%;
+  top: 68%;
+  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border-radius: 50px;
+  border-top-left-radius: 1px;
+  background-color: #ece2e2;
+  z-index: 2;
+  padding: 2% 1%;
+  opacity: 0;
+  -webkit-animation: 'softly';
+          animation: 'softly';
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.05s;
+          animation-duration: 1.05s;
+}
+
+.rangerstats {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 5%;
+  top: 78.5%;
+  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border-radius: 50px;
+  border-top-left-radius: 1px;
+  background-color: #ece2e2;
+  z-index: 2;
+  padding: 2% 1%;
+  opacity: 0;
+  -webkit-animation: 'softly';
+          animation: 'softly';
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.05s;
+          animation-duration: 1.05s;
+}
+
+.shapeshifterstats {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 5%;
+  top: 89%;
+  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border-radius: 50px;
+  border-top-left-radius: 1px;
+  background-color: #ece2e2;
+  z-index: 2;
+  padding: 2% 1%;
+  opacity: 0;
+  -webkit-animation: 'softly';
+          animation: 'softly';
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.05s;
+          animation-duration: 1.05s;
+}
+
+.sorcererstats {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 5%;
+  top: 99%;
+  border: 0.1rem solid rgba(189, 199, 202, 0.856);
+  border-radius: 50px;
+  border-top-left-radius: 1px;
+  background-color: #ece2e2;
+  z-index: 2;
+  padding: 2% 1%;
+  opacity: 0;
+  -webkit-animation: 'softly';
+          animation: 'softly';
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.05s;
+          animation-duration: 1.05s;
 }
 /*# sourceMappingURL=styles.css.map */

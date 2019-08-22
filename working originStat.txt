@@ -1,0 +1,26 @@
+
+function originStat(hero, list, properti, x) {
+  var list = originList;
+  var genre = list[hero];
+  var target = genre[properti];
+
+
+  for(let obs in list) { 
+    var x = x;
+    if (x === undefined){
+            x = 0;  } 
+    final = JSON.stringify(target[x]);
+}
+          var statsheet = document.createElement('div');
+          var dad = document.getElementsByClassName('heroes')[1];
+           
+            statsheet.setAttribute('class', 'assassin-stats');
+            statsheet.style.opacity = 1;
+            
+            var lasttoken = final;
+                statsheet.innerHTML = lasttoken;
+                dad.appendChild(statsheet);
+                return (statsheet.innerHTML);
+  } 
+
+
